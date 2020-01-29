@@ -60,7 +60,7 @@ function qod_scripts() {
 
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'qod-get-quote', get_template_directory_uri() . '/build/js/get-quote.min.js', array(), '20151215', true );
-	wp_localize_script( 'qod-get-quote', 'qod_vars', array(
+	wp_localize_script( 'qod-get-quote', 'qodVars', array(
 		'rest_url' => esc_url_raw( rest_url() ),
 		'wpapi_nonce' => wp_create_nonce( 'wp_rest' )
 	) );
