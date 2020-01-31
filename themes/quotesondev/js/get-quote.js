@@ -2,15 +2,26 @@
 
     $(function () {
 
+        //getRandomQuote();
+
         $('#new-quote-button').click(function() {
+            getRandomQuote();
+        });
+
+        function getRandomQuote() {
             jQuery.ajax({
-                url: qodVars.rest_url + 'wp/v2/posts/?&filter[posts_per_page]=1&filter[orderby]=rand',
+                url: qodVars.rest_url + 'wp/v2/posts/?&filter[orderby]=rand',
                 context: document.body
             }).done(function(data) {
                 if (typeof data !== 'undefined' && data.length > 0) {
-                    $('.entry-content').html(data[0].content.rendered);
+                    window.location.href = data[0].link;
                 }
             });
+        }
+
+        $('.wpcf7-form').submit(function( event ) {
+            event.preventDefault();
+            console.log(event);
         });
 
     });
