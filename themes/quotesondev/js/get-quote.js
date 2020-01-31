@@ -2,14 +2,8 @@
 
     $(function () {
 
-        //getRandomQuote();
-
         $('#new-quote-button').click(function() {
-            getRandomQuote();
-        });
-
-        function getRandomQuote() {
-            jQuery.ajax({
+            $.ajax({
                 url: qodVars.rest_url + 'wp/v2/posts/?&filter[orderby]=rand',
                 context: document.body
             }).done(function(data) {
@@ -17,12 +11,19 @@
                     window.location.href = data[0].link;
                 }
             });
-        }
-
-        $('.wpcf7-form').submit(function( event ) {
-            event.preventDefault();
-            console.log(event);
         });
+
+        $('input.wpcf7-submit[type="submit"]').click(function() {
+
+            console.log({
+                'your-author': $( "input[name='your-author']" ).val(),
+                'quote': $( "textarea[name='quote']" ).val(),
+                'your-find-quote': $( "input[name='your-find-quote']" ).val(),
+                'your-url': $( "input[name='your-url']" ).val()
+            });
+
+            return false;
+        })
 
     });
 
