@@ -7,3 +7,7 @@ body {
 .site-content {
 	width: 1080px;
 }
+
+.wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok {
+	display: none !important;
+}
