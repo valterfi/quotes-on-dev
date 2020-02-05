@@ -8,6 +8,7 @@
 
 # Ignore everything in "plugins" except certain plugins. #
 plugins/*
+!plugins/contact-form-7/
 
 # Ignore everything in "themes" except the active theme. #
 themes/*
