@@ -1,13 +1,78 @@
 body {
+    color: white;
 	background-color: #222222;
 	font-size: 16px;
-	line-height: 1.5
+	line-height: 1.5;
+    font-family: Exo;
+    margin: 0;
 }
 
-.site-content {
-	width: 1080px;
+button {
+    box-shadow: none;
+    background-color: #222222;
+    border: 2px solid #00cc00;
+    border-radius: 3px;
+    color: #00cc00;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: .75rem 2.25rem;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 2.5%;
+    width: 100%;
+}
+
+.entry-title {
+    display: inline;
+    font-size: 1.25rem;
+}
+
+.entry-meta {
+    margin-bottom: 3rem;
+}
+
+.source {
+    font-style: italic;
+}
+
+button:hover {
+    box-shadow: none;
+}
+
+.content-area {
+    max-width: 1080px;
+    padding: 2px;
+}
+
+a, a:visited {
+    color: #00cc00;
 }
 
 .wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok {
 	display: none !important;
+}
+
+.footer-navigation {
+    display: inline-flex;
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+}
+
+.footer-navigation li:first-child {
+    padding-left: 0;
+}
+
+.footer-navigation li {
+    border-right: 1px solid #fff;
+    line-height: 1;
+    padding: 0 1rem;
+}
+
+.footer-navigation li:last-child {
+    border-right: 0;
 }
