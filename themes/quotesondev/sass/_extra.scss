@@ -3,8 +3,18 @@ body {
 	background-color: #222222;
 	font-size: 16px;
 	line-height: 1.5;
-    font-family: Exo;
+    font-family: Exo,sans-serif;
     margin: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: .67em 0;
 }
 
 .wpcf7-form-control:focus{
@@ -43,6 +53,10 @@ button:hover, input[type=button]:hover, input[type=submit]:hover {
 }
 
 .entry-title {
+    margin-top: 3rem;
+}
+
+.entry-title-inline {
     display: inline;
     font-size: 1.25rem;
 }
@@ -53,6 +67,7 @@ button:hover, input[type=button]:hover, input[type=submit]:hover {
 
 .source {
     font-style: italic;
+    font-size: 1.25rem;
 }
 
 .content-area {
@@ -69,6 +84,18 @@ a, a:visited {
     color: #00cc00;
 }
 
+p {
+    margin-bottom: 1.5rem;
+}
+
+.quotesLogo {
+    display: block;
+    width: 300px;
+    height: auto;
+    max-width: 100%;
+    border: 0;
+}
+
 .archives ul {
     list-style: none;
     margin-left: 0;
@@ -83,8 +110,30 @@ a, a:visited {
     margin-right: 1.125rem;
 }
 
+.clearfix {
+    clear: both;
+    content: "";
+    display: table;
+}
+
 .wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok {
 	display: none !important;
+}
+
+.site-header {
+    margin-top: 3rem;
+}
+
+.site-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4.5rem 0 3rem;
+}
+
+.site-info p {
+    margin-top: 16px;
+    flex: 0 1 100%;
+    line-height: 1;
 }
 
 .footer-navigation {

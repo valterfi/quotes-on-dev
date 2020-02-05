@@ -10,13 +10,13 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<header class="entry-header">
+		<header class="entry-title">
 			<h1><?php the_title()?></h1>
 		</header><!-- .entry-header -->
 
 			<section>
 
-				<div class="archives">
+				<div class="archives clearfix">
 					<h2>Quote Authors</h2>
 
 					<?php
@@ -32,7 +32,7 @@ get_header(); ?>
 
 				</div>
 
-				<div class="archives">
+				<div class="archives clearfix">
 					<h2>Categories</h2>
 
 					<?php
@@ -48,7 +48,7 @@ get_header(); ?>
 
 				</div>
 
-				<div class="archives">
+				<div class="archives clearfix">
 					<h2>Tags</h2>
 
 					<?php

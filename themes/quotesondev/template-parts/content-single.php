@@ -14,7 +14,7 @@
 	</div><!-- .entry-content -->
 
 	<div class="entry-meta">
-		<h2 class="entry-title">— <?php the_title()?></h2>
+		<h2 class="entry-title entry-title-inline">— <?php the_title()?></h2>
 		<span class="source">
 
 		<?php  $source = get_post_meta($post->ID, '_qod_quote_source', true); ?>

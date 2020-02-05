@@ -673,8 +673,16 @@ body {
   background-color: #222222;
   font-size: 16px;
   line-height: 1.5;
-  font-family: Exo;
+  font-family: Exo,sans-serif;
   margin: 0; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+h2 {
+  font-size: 1.5em;
+  margin: .67em 0; }
 
 .wpcf7-form-control:focus {
   color: #00cc00 !important; }
@@ -708,6 +716,9 @@ button:hover, input[type=button]:hover, input[type=submit]:hover {
   width: 100%; }
 
 .entry-title {
+  margin-top: 3rem; }
+
+.entry-title-inline {
   display: inline;
   font-size: 1.25rem; }
 
@@ -715,7 +726,8 @@ button:hover, input[type=button]:hover, input[type=submit]:hover {
   margin-bottom: 3rem; }
 
 .source {
-  font-style: italic; }
+  font-style: italic;
+  font-size: 1.25rem; }
 
 .content-area {
   max-width: 1080px;
@@ -727,6 +739,16 @@ a {
 
 a, a:visited {
   color: #00cc00; }
+
+p {
+  margin-bottom: 1.5rem; }
+
+.quotesLogo {
+  display: block;
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+  border: 0; }
 
 .archives ul {
   list-style: none;
@@ -743,8 +765,31 @@ a, a:visited {
   margin-bottom: .5rem;
   margin-right: 1.125rem; }
 
+.clearfix {
+  clear: both;
+  content: "";
+  display: table; }
+
 .wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok {
   display: none !important; }
+
+.site-header {
+  margin-top: 3rem; }
+
+.site-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 4.5rem 0 3rem; }
+
+.site-info p {
+  margin-top: 16px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  line-height: 1; }
 
 .footer-navigation {
   display: -webkit-inline-box;
