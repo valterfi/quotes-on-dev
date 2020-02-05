@@ -10,13 +10,17 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		<header class="entry-header">
+			<h1><?php the_title()?></h1>
+		</header><!-- .entry-header -->
+
 			<section>
 
-				<div>
+				<div class="archives">
 					<h2>Quote Authors</h2>
 
 					<?php
-						$args = array( 'post_type' => 'post', 'order' => 'ASC', 'numberposts' => -1 );
+						$args = array( 'post_type' => 'post', 'order' => 'DESC', 'numberposts' => -1 );
 						$quotes = get_posts( $args ); // returns an array of posts
 					?>
 
@@ -28,7 +32,7 @@ get_header(); ?>
 
 				</div>
 
-				<div>
+				<div class="archives">
 					<h2>Categories</h2>
 
 					<?php
@@ -44,7 +48,7 @@ get_header(); ?>
 
 				</div>
 
-				<div>
+				<div class="archives">
 					<h2>Tags</h2>
 
 					<?php

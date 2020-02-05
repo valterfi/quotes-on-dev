@@ -60,8 +60,27 @@ button:hover, input[type=button]:hover, input[type=submit]:hover {
     padding: 2px;
 }
 
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
 a, a:visited {
     color: #00cc00;
+}
+
+.archives ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.archives ul li {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    margin-right: 1.125rem;
 }
 
 .wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok {
