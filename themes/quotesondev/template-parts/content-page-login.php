@@ -15,5 +15,7 @@
 
 	<p>Sorry, you must be logged in to submit a quote!</p>
 
-	<p><a href="https://quotes.academy.red/wp-login.php">Click here to login.</a></p>
+	<?php $returnPath = get_settings('siteurl') . '/wp-login.php/?redirect_to=' . urlencode($_SERVER['REQUEST_URI']); ?>
+
+	<p><a href="<?php echo $returnPath;?>">Click here to login.</a></p>
 </article><!-- #post-## -->
