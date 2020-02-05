@@ -35,8 +35,7 @@
             });
         });
 
-        $('.wpcf7-form').on('submit', function(event) {
-
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
             event.preventDefault();
 
             let newQuote = {
@@ -59,8 +58,7 @@
                 window.location.href = data.link;
             });
 
-        });
-
+        }, false );
 
     });
 
